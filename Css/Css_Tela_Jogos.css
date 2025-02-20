@@ -59,7 +59,7 @@ header img {
 }
 
 header .header-text {
-  font-size: 26px;
-  font-family: "Press Start 2P", cursive;
-  text-decoration: underline;
+  font-family: "Press Start 2P", serif;
+  font-weight: 700;
+  font-style: normal;
 }
