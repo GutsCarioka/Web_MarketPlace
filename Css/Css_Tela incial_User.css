@@ -1,0 +1,73 @@
+/* Button used to open the contact form - fixed at the upper right of the page */
+.open-button {
+  background-color: #c0c2ff;
+  color: white;
+  padding: 2px 5px; /* Adicionando padding para aumentar o tamanho do botão */
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  top: 40px; /* Ajuste a posição do topo, se necessário */
+  right: 10px; /* Ajusta a distância da borda direita da página */
+  width: auto; /* Deixe o botão com tamanho automático */
+}
+
+/* the popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1; /* Corrigido 'solido' para 'solid' */
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 250px;
+  padding: 10px;
+  background-color: #f1f1f1;
+  position: fixed;
+  bottom: 410px;
+  right: 10px;
+}
+/* full-width input fields */
+.form-container input[type="text"],
+.form-container input[type="password"] {
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* when the inputs get focus, do something */
+.form-container input[type="text"]:focus,
+.form-container input[type="password"]:focus {
+  background-color: #b0c3f6;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .bnt {
+  background-color: #04aa6d;
+  color: #f1f1f1;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px; /* Corrigido 'margin: bottom' para 'margin-bottom' */
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  padding-top: 20px;
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .bnt:hover,
+.open-button:hover {
+  opacity: 1;
+}
